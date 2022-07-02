@@ -1,0 +1,15 @@
+<%= form_with model: @league do |form| %>
+  <%= form.label :name, "League name" %>
+  <%= form.text_field :name %>
+  <br>
+  <%= form.label :latitude, "Latitude" %>
+  <%= form.text_field :latitude %>
+  <br>
+  <%= form.label :longitude, "Longitude" %>
+  <%= form.text_field :longitude %>
+  <br>
+  <%= form.label :price, "Price" %>
+  <%= form.text_field :price %>
+  <br>
+  <%= form.submit "Create League" %>
+<% end %>
